@@ -1,22 +1,12 @@
 
-# ask the user how many dice, then ask how many sides each die has. (ie - 5 sided die and 12 sided die)
-
-# keep numSides
-# keep numDice
-# put numsides in forloop.
-
-
-# ------------------------------------------------------------------------------
-
 
 from specialInput import *
 
-numSides = int_input("Hi. How many sides would you like your dice to have? ")
-
-numDice = int_input("OK. How many dice would you like to roll? ")
+numDice = int_input("Hi. How many dice would you like to roll? ")
 
 import random
 
-for x in range(0, numDice):
+for x in range(numDice):
+    numSides = int_input("OK. Now tell me, this fabulous program who is doing you this great favor, how many sides you'd like on your die. ")
     print random.randint(1, numSides)
 
